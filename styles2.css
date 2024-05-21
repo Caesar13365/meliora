@@ -1,0 +1,56 @@
+label {
+    padding-right: 30px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+legend {
+    text-align: left;
+    background-color: darkblue;
+    color: lightgray;
+    padding: 5px;
+}
+body {
+    margin: 25px;
+    background-color: darkslateblue;
+    font-family: Arial, sans-serif;
+}
+input {
+    padding: 12px;
+    columns: 25;
+    background-color: lightgray;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 2px solid gray;
+}
+select {
+    padding: 12px;
+    padding-right: 60px;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+option {
+    font-weight: bold;
+    background-color: lightgoldenrodyellow;
+    color: darkblue;
+}
+button {
+    border-radius: 25px;
+    background-color: darkblue;
+    color: white;
+    padding: 12px;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+form {
+    width: 70%;
+    margin: auto;
+}
+fieldset {
+    border-color: lightgoldenrodyellow;
+    padding: 10px;
+    border-width: 2px;
+}

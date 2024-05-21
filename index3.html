@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <style>
+        body {
+            text-align: center;
+            margin: auto;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h2 {
+            padding: 12px 0;
+            background-color: #00ced1;
+            color: #333;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 20px;
+            margin: 5px;
+            border: 2px solid #00ced1;
+            border-radius: 10px;
+            font-size: 1.2em;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .button-row {
+            margin: 5px 0;
+        }
+        #cls {
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+        }
+        #display {
+            background-color: #00ced1;
+            color: #fff;
+            font-size: 1.5em;
+            width: calc(100% - 20px);
+            text-align: right;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .calculator-wrapper {
+            background-color: #8a2be2;
+            padding: 20px;
+            border-radius: 20px;
+            width: 320px;
+            margin: 20px auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator-wrapper">
+        <h2>A SIMPLE JS CALCULATOR</h2>
+        <div class="form-container">
+            <form name="calcForm">
+                <div>
+                    <input type="text" name="result" id="display" readonly>
+                </div>
+                <div class="button-row">
+                    <input type="button" value="1" onclick="calcForm.result.value += '1'">
+                    <input type="button" value="2" onclick="calcForm.result.value += '2'">
+                    <input type="button" value="3" onclick="calcForm.result.value += '3'">
+                    <input type="button" value="+" onclick="calcForm.result.value += '+'">
+                </div>
+                <div class="button-row">
+                    <input type="button" value="4" onclick="calcForm.result.value += '4'">
+                    <input type="button" value="5" onclick="calcForm.result.value += '5'">
+                    <input type="button" value="6" onclick="calcForm.result.value += '6'">
+                    <input type="button" value="-" onclick="calcForm.result.value += '-'">
+                </div>
+                <div class="button-row">
+                    <input type="button" value="7" onclick="calcForm.result.value += '7'">
+                    <input type="button" value="8" onclick="calcForm.result.value += '8'">
+                    <input type="button" value="9" onclick="calcForm.result.value += '9'">
+                    <input type="button" value="*" onclick="calcForm.result.value += '*'">
+                </div>
+                <div class="button-row">
+                    <input type="button" value="0" onclick="calcForm.result.value += '0'">
+                    <input type="button" value="/" onclick="calcForm.result.value += '/'">
+                    <input type="button" value="clear" id="cls" onclick="calcForm.result.value = ''">
+                    <input type="button" value="=" onclick="calcForm.result.value = eval(calcForm.result.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
